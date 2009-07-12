@@ -1,11 +1,10 @@
 %table#calc
   %tr
-    %td#lcd{:colspan => 4}
-      %span#mark
-      %span#num
+    %td#work{:colspan => 4}
+      %input#formula{:type => "text"}
   %tr
     %td#ac AC
-    %td#c C
+    %td#bs BS
     %td#log LOG
     %td#div /
   %tr
@@ -24,7 +23,9 @@
     %td#n3 3
     %td#add +
   %tr
-    %td#n0{:colspan => 3} 0
+    %td#n0 0
+    %td#lparen (
+    %td#rparen )
     %td#equal =
 
 %script{:src => "/jquery.js"}
