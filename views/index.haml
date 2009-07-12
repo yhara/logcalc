@@ -1,0 +1,31 @@
+%table#calc
+  %tr
+    %td#lcd{:colspan => 4}
+      %span#mark
+      %span#num
+  %tr
+    %td#ac AC
+    %td#c C
+    %td#log LOG
+    %td#div /
+  %tr
+    %td#n7 7
+    %td#n8 8
+    %td#n9 9
+    %td#mul *
+  %tr
+    %td#n4 4
+    %td#n5 5
+    %td#n6 6
+    %td#sub -
+  %tr
+    %td#n1 1
+    %td#n2 2
+    %td#n3 3
+    %td#add +
+  %tr
+    %td#n0{:colspan => 3} 0
+    %td#equal =
+
+%script{:src => "/jquery.js"}
+%script{:src => "/calc.js"}
