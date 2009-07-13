@@ -2,6 +2,5 @@
   - @formulae.each do |f|
     %tr
       %td&= f.time
-      %td&= f.formula
-      %td&= f.result
+      %td&== #{f.formula} = #{f.result}
 
