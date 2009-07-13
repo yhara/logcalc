@@ -22,6 +22,7 @@ $(document).ready(function(){
   $("#equal").click(function(){
     var formula = read(), result = "";
     try{ result = eval(formula); } catch(e){ }
+    $.post("/calculated", {formula: formula, result: result});
     write(result);
   });
 
@@ -31,5 +32,9 @@ $(document).ready(function(){
 
   $("#bs").click(function(){
     write( read().replace(/.$/, "") );
+  });
+
+  $("#log").click(function(){
+    $("#logs").load("/logs");
   });
 });
